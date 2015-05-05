@@ -7,7 +7,8 @@ Ist übersetzt ins Deutsche und hat darüber hinaus noch Angaben zu Alter, Gesch
 
 Der Export-Menü-Button ist nun ein normaler Button am Ende der Seite, ab Android 5 wird das Menü versteckt und so finde ich das hübscher.
 
-Anleitung:
+##Anleitung:
+
 1. Clone
 2. Import über Gradle
 3. ???
