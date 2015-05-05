@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">NASA TLX</string>
+	<string name="action_settings">Einstellungen</string>
+	<string name="clear">Lösche</string>
+	<string name="effort">Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu erreichen?</string>
+	<string name="physical">Wie viel körperliche Aktivität war erforderlich (z.B. ziehen, drücken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, einfach
+		oder anstrengend, erholsam oder mühselig?</string>
+	<string name="temporal">Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe langsam
+		und geruhsam oder schnell und hektisch?</string>
+	<string name="performance">Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer
+		Leistung bei der Verfolgung dieser Ziele?</string>
+	<string name="mental">Wie viel geistige Anforderung war bei der Informationsaufnahme und bei der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen,
+		Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder ist sie fehlertolerant?</string>
+	<string name="frustration">Wie unsicher, entmutigt, irritiert, gestresst und verärgert (versus sicher, bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten
+		Sie sich während der Aufgabe?</string>
+	<string name="very_high">Sehr hoch</string>
+	<string name="very_low">Sehr gering</string>
+	<string name="save">Speichern</string>
+	<string name="perfect">Perfekt</string>
+	<string name="failure">Fehlerhaft</string>
+	<string name="mail">Email</string>
+	<string name="entry">Probant ID</string>
+	<string name="participant">Datum</string>
+	<string name="sex">Geschlecht</string>
+	<string name="female">Weiblich</string>
+	<string name="glasses">Tragen Sie eine Brille?</string>
+	<string name="no">Nein</string>
+	<string name="yes">Ja</string>
+	<string name="rating">Wie gut fanden Sie die Applikation insgesamt?</string>
+	<string name="reactiontime">Wie gut fanden Sie die Reaktionszeiten der Anwendung?</string>
+	<string name="stability">Wie stabil war ihre Verbindung?</string>
+	<string name="male">Männlich</string>
+	<string name="age">Alter</string>
+</resources>

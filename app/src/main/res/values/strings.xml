@@ -1,0 +1,30 @@
+<resources>
+	<string name="app_name">NASA TLX</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string name="mental">How mentally demanding was the task?</string>
+	<string name="physical">How physically demanding was the task?</string>
+	<string name="temporal">How hurried or rushed was the pace of the task?</string>
+	<string name="performance">How successful were you in accomplishing what you were asked to do?</string>
+	<string name="effort">How hard did you have to work to accomplish your level of performance?</string>
+	<string name="frustration">How insecure, discouraged, irritated, stressed, and annoyed were you?</string>
+	<string name="very_high">Very High</string>
+	<string name="very_low">Very Low</string>
+	<string name="perfect">Perfect</string>
+	<string name="failure">Failure</string>
+	<string name="save">Save</string>
+	<string name="clear">Clear</string>
+	<string name="mail">Email</string>
+	<string name="participant">Date</string>
+	<string name="entry">Entry ID</string>
+	<string name="sex">Sex</string>
+	<string name="stability">Stability</string>
+	<string name="reactiontime">Reactiontime</string>
+	<string name="rating">Rating</string>
+	<string name="female">female</string>
+	<string name="male">male</string>
+	<string name="yes">yes</string>
+	<string name="no">no</string>
+	<string name="glasses">Do you wear glasses?</string>
+	<string name="age">Age</string>
+</resources>
