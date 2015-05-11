@@ -27,4 +27,10 @@
 	<string name="no">no</string>
 	<string name="glasses">Do you wear glasses?</string>
 	<string name="age">Age</string>
+	<string name="hmd">HMD</string>
+	<string name="tablet">Tablet</string>
+	<string name="device">Which device was most effective?</string>
+	<string name="support">How helping were the support functions?</string>
+	<string name="something_else">Do you have something else to say?</string>
+	<string name="videochannel">How helpful was the video channel?</string>
 </resources>

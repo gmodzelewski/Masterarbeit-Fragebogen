@@ -32,4 +32,10 @@
 	<string name="stability">Wie stabil war ihre Verbindung?</string>
 	<string name="male">Männlich</string>
 	<string name="age">Alter</string>
+	<string name="tablet">Tablet</string>
+	<string name="device">Welches Gerät empfanden Sie bei der Lösung am effektivsten?</string>
+	<string name="hmd">Datenbrille</string>
+	<string name="support">Wie hilfreich empfanden Sie die Unterstützungsfunktionen?</string>
+	<string name="something_else">Haben Sie sonstige Anmerkungen?</string>
+	<string name="videochannel">Wie hilfreich empfanden Sie den Videokanal?</string>
 </resources>

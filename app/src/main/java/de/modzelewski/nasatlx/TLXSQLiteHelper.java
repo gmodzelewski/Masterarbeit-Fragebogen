@@ -9,7 +9,7 @@ public class TLXSQLiteHelper extends SQLiteOpenHelper {
 	private static final String tag = "TLXSQLiteHelper";
 
 	private static final String DATABASE_NAME = "tlx.db";
-	private static final int DATABASE_VERSION = 3;
+	private static final int DATABASE_VERSION = 4;
 
 	private static final String TABLE_NAME = "entries";
 	private static final String TABLE_SCHEMA =
@@ -17,18 +17,15 @@ public class TLXSQLiteHelper extends SQLiteOpenHelper {
 					"timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, " +
 					"participant TEXT NOT NULL, " +
 					"entry TEXT NOT NULL, " +
-					"mental INTEGER, " +
-					"physical INTEGER, " +
-					"temporal INTEGER, " +
-					"performance INTEGER, " +
-					"effort INTEGER, " +
-					"frustration INTEGER, " +
+					"videochannel INTEGER, " +
+					"support INTEGER, " +
 					"age TEXT NOT NULL, " +
 					"sex INTEGER, " +
 					"glasses INTEGER, " +
 					"stability INTEGER, " +
 					"reactiontime INTEGER, " +
-					"rating INTEGER);";
+					"rating INTEGER, " +
+					"somethingelse TEXT);";
 
 	private static final String DATABASE_CREATE =
 			"CREATE TABLE " + TABLE_NAME + TABLE_SCHEMA;

@@ -70,29 +70,23 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	}
 
 	private void done() {
-		int mentalId = ((RadioGroup)findViewById(R.id.group_mental)).getCheckedRadioButtonId();
-		int physicalId = ((RadioGroup)findViewById(R.id.group_physical)).getCheckedRadioButtonId();
-		int temporalId = ((RadioGroup)findViewById(R.id.group_temporal)).getCheckedRadioButtonId();
-		int performanceId = ((RadioGroup)findViewById(R.id.group_performance)).getCheckedRadioButtonId();
-		int effortId = ((RadioGroup)findViewById(R.id.group_effort)).getCheckedRadioButtonId();
-		int frustrationId = ((RadioGroup)findViewById(R.id.group_frustration)).getCheckedRadioButtonId();
-
-		int mental, physical, temporal, performance, effort, frustration;
-
 		String participantId = ((EditText)findViewById(R.id.edit_pid)).getText().toString();
 		String entryId = ((EditText)findViewById(R.id.edit_eid)).getText().toString();
+		int sexId = ((RadioGroup)findViewById(R.id.group_sex)).getCheckedRadioButtonId();
+		int glassesId = ((RadioGroup)findViewById(R.id.group_glasses)).getCheckedRadioButtonId();
 
-
-		int sex, glasses;
+		int sex, glasses, videochannel, support;
 		String age = ((EditText)findViewById(R.id.edit_age)).getText().toString();
 		int stability, reactiontime, rating;
+		String something_else = ((EditText)findViewById(R.id.something_else)).getText().toString();
 
+		int videochannelId = ((RadioGroup)findViewById(R.id.group_videochannel)).getCheckedRadioButtonId();
+		int supportId = ((RadioGroup)findViewById(R.id.group_support)).getCheckedRadioButtonId();
 		int stabilityId = ((RadioGroup)findViewById(R.id.group_stability)).getCheckedRadioButtonId();
 		int reactiontimeId = ((RadioGroup)findViewById(R.id.group_reactiontime)).getCheckedRadioButtonId();
 		int ratingId = ((RadioGroup)findViewById(R.id.group_rating)).getCheckedRadioButtonId();
 
 
-		int sexId = ((RadioGroup)findViewById(R.id.group_sex)).getCheckedRadioButtonId();
 		switch(sexId) {
 			case R.id.sex_male:
 				sex = 1;
@@ -105,7 +99,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 				break;
 		}
 
-		int glassesId = ((RadioGroup)findViewById(R.id.group_glasses)).getCheckedRadioButtonId();
 		switch(glassesId) {
 			case R.id.glasses_yes:
 				glasses = 1;
@@ -117,6 +110,62 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 				glasses = -1;
 				break;
 		}
+
+
+		switch(videochannelId) {
+			case R.id.videochannel_1:
+				videochannel = 1;
+				break;
+			case R.id.videochannel_2:
+				videochannel = 2;
+				break;
+			case R.id.videochannel_3:
+				videochannel = 3;
+				break;
+			case R.id.videochannel_4:
+				videochannel = 4;
+				break;
+			case R.id.videochannel_5:
+				videochannel = 5;
+				break;
+			case R.id.videochannel_6:
+				videochannel = 6;
+				break;
+			case R.id.videochannel_7:
+				videochannel = 7;
+				break;
+			default:
+				videochannel = -1;
+				break;
+		}
+
+		switch(supportId) {
+			case R.id.support_1:
+				support = 1;
+				break;
+			case R.id.support_2:
+				support = 2;
+				break;
+			case R.id.support_3:
+				support = 3;
+				break;
+			case R.id.support_4:
+				support = 4;
+				break;
+			case R.id.support_5:
+				support = 5;
+				break;
+			case R.id.support_6:
+				support = 6;
+				break;
+			case R.id.support_7:
+				support = 7;
+				break;
+			default:
+				support = -1;
+				break;
+		}
+
 
 
 //		Georg: stability, reactiontime, rating
@@ -205,180 +254,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 
 
-
-
-
-
-
-
-
-
-		switch(mentalId) {
-			case R.id.mental_1:
-				mental = 1;
-				break;
-			case R.id.mental_2:
-				mental = 2;
-				break;
-			case R.id.mental_3:
-				mental = 3;
-				break;
-			case R.id.mental_4:
-				mental = 4;
-				break;
-			case R.id.mental_5:
-				mental = 5;
-				break;
-			case R.id.mental_6:
-				mental = 6;
-				break;
-			case R.id.mental_7:
-				mental = 7;
-				break;
-			default:
-				mental = -1;
-				break;
-		}
-
-		switch(physicalId) {
-			case R.id.physical_1:
-				physical = 1;
-				break;
-			case R.id.physical_2:
-				physical = 2;
-				break;
-			case R.id.physical_3:
-				physical = 3;
-				break;
-			case R.id.physical_4:
-				physical = 4;
-				break;
-			case R.id.physical_5:
-				physical = 5;
-				break;
-			case R.id.physical_6:
-				physical = 6;
-				break;
-			case R.id.physical_7:
-				physical = 7;
-				break;
-			default:
-				physical = -1;
-				break;
-		}
-
-		switch(temporalId) {
-			case R.id.temporal_1:
-				temporal = 1;
-				break;
-			case R.id.temporal_2:
-				temporal = 2;
-				break;
-			case R.id.temporal_3:
-				temporal = 3;
-				break;
-			case R.id.temporal_4:
-				temporal = 4;
-				break;
-			case R.id.temporal_5:
-				temporal = 5;
-				break;
-			case R.id.temporal_6:
-				temporal = 6;
-				break;
-			case R.id.temporal_7:
-				temporal = 7;
-				break;
-			default:
-				temporal = -1;
-				break;
-		}
-
-		switch(performanceId) {
-			case R.id.performance_1:
-				performance = 1;
-				break;
-			case R.id.performance_2:
-				performance = 2;
-				break;
-			case R.id.performance_3:
-				performance = 3;
-				break;
-			case R.id.performance_4:
-				performance = 4;
-				break;
-			case R.id.performance_5:
-				performance = 5;
-				break;
-			case R.id.performance_6:
-				performance = 6;
-				break;
-			case R.id.performance_7:
-				performance = 7;
-				break;
-			default:
-				performance = -1;
-				break;
-		}
-
-		switch(effortId) {
-			case R.id.effort_1:
-				effort = 1;
-				break;
-			case R.id.effort_2:
-				effort = 2;
-				break;
-			case R.id.effort_3:
-				effort = 3;
-				break;
-			case R.id.effort_4:
-				effort = 4;
-				break;
-			case R.id.effort_5:
-				effort = 5;
-				break;
-			case R.id.effort_6:
-				effort = 6;
-				break;
-			case R.id.effort_7:
-				effort = 7;
-				break;
-			default:
-				effort = -1;
-				break;
-		}
-
-		switch(frustrationId) {
-			case R.id.frustration_1:
-				frustration = 1;
-				break;
-			case R.id.frustration_2:
-				frustration = 2;
-				break;
-			case R.id.frustration_3:
-				frustration = 3;
-				break;
-			case R.id.frustration_4:
-				frustration = 4;
-				break;
-			case R.id.frustration_5:
-				frustration = 5;
-				break;
-			case R.id.frustration_6:
-				frustration = 6;
-				break;
-			case R.id.frustration_7:
-				frustration = 7;
-				break;
-			default:
-				frustration = -1;
-				break;
-		}
-
 		saveIds(participantId, entryId);
 
 //		saveRecord(participantId, entryId, mental, physical, temporal, performance, effort, frustration);
-		saveRecord(participantId, entryId, mental, physical, temporal, performance, effort, frustration, age, sex, glasses, stability, reactiontime, rating);
+		saveRecord(participantId, entryId, videochannel, support, age, sex, glasses, stability, reactiontime, rating, something_else);
 		reset();
 		((EditText)findViewById(R.id.edit_eid)).setText("");
 	}
@@ -410,9 +289,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			((EditText)findViewById(R.id.edit_eid)).setText(entryId);
 	}
 
-	private void saveRecord(String participantId, String entryId, int mental, int physical,
-	                        int temporal, int performance, int effort, int frustration,
-	                        String age, int sex, int glasses, int stability, int reactiontime, int rating) {
+	private void saveRecord(String participantId, String entryId, int videochannel, int support,
+	                        String age, int sex, int glasses, int stability, int reactiontime, int rating, String something_else) {
+
 		TLXSQLiteHelper helper = new TLXSQLiteHelper(this);
 		SQLiteDatabase db = helper.getWritableDatabase();
 
@@ -423,12 +302,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 		values.put("participant", _participantId);
 		values.put("entry", _entryId);
-		values.put("mental", mental);
-		values.put("physical", physical);
-		values.put("temporal", temporal);
-		values.put("performance", performance);
-		values.put("effort", effort);
-		values.put("frustration", frustration);
+		values.put("videochannel", videochannel);
+		values.put("support", support);
 
 		values.put("age", age);
 		values.put("sex", sex);
@@ -436,6 +311,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		values.put("stability", stability);
 		values.put("reactiontime", reactiontime);
 		values.put("rating", rating);
+		values.put("somethingelse", something_else);
 
 		db.beginTransaction();
 		try {
@@ -449,14 +325,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	}
 
 	private void clearSelections() {
-		((RadioGroup)findViewById(R.id.group_mental)).clearCheck();
-		((RadioGroup)findViewById(R.id.group_physical)).clearCheck();
-		((RadioGroup)findViewById(R.id.group_temporal)).clearCheck();
-		((RadioGroup)findViewById(R.id.group_performance)).clearCheck();
-		((RadioGroup)findViewById(R.id.group_effort)).clearCheck();
-		((RadioGroup)findViewById(R.id.group_frustration)).clearCheck();
+		((RadioGroup)findViewById(R.id.group_videochannel)).clearCheck();
+		((RadioGroup)findViewById(R.id.group_support)).clearCheck();
 
 		((EditText)findViewById(R.id.edit_age)).setText("");
+		((EditText)findViewById(R.id.something_else)).setText("");
 		((RadioGroup)findViewById(R.id.group_sex)).clearCheck();
 		((RadioGroup)findViewById(R.id.group_glasses)).clearCheck();
 		((RadioGroup)findViewById(R.id.group_stability)).clearCheck();
@@ -509,9 +382,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		TLXSQLiteHelper helper = new TLXSQLiteHelper(this);
 		SQLiteDatabase db = helper.getReadableDatabase();
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("timestamp,participant_id,entry_id,mental," +
-				"physical,temporal,performance,effort,frustration," +
-				"age,sex,glasses,stability,reactiontime,rating\n");
+		buffer.append("timestamp,participant_id,entry_id,videochannel," +
+				"support," +
+				"age,sex,glasses,stability,reactiontime,rating,somethingelse\n");
 
 //		sex: 1 == male, 0 == female
 
@@ -522,12 +395,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 //					c.getString(1), c.getString(2), c.getString(3),
 //					c.getInt(4), c.getInt(5), c.getInt(6),
 //					c.getInt(7), c.getInt(8), c.getInt(9)));
-			buffer.append(String.format("%s,%s,%s,%d,%d,%d,%d,%d,%d\n",
+			buffer.append(String.format("%s,%s,%s,%d,%d,%s,%d,%d,%d,%d,%d,%s\n",
 					c.getString(1), c.getString(2), c.getString(3),
-					c.getInt(4), c.getInt(5), c.getInt(6),
+					c.getInt(4), c.getInt(5), c.getString(6),
 					c.getInt(7), c.getInt(8), c.getInt(9),
-					c.getString(10), c.getInt(11), c.getInt(12),
-					c.getInt(13), c.getInt(14), c.getInt(15)));
+					c.getInt(10), c.getInt(11), c.getString(12)));
 			c.moveToNext();
 		}
 		c.close();
